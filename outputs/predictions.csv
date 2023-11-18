@@ -1,4 +1,4 @@
-Image File Name,Image Size,Prediction,Date and Time,Execution Time,Model,Model Revision
-140423147-adult-handsome-man-scared-with-hands-up-over-isolated-white-background.jpg,98607,"['Left', 'Right']",2023-11-18 15:33:54,0.26237940788269043,MediaPipe Hand Landmarker,0.0.1
-287041105.jpg,172589,"['Right', 'Left']",2023-11-18 15:36:04,0.2901453971862793,MediaPipe Hand Landmarker,0.0.1
-140423147-adult-handsome-man-scared-with-hands-up-over-isolated-white-background.jpg,98607,"['Left', 'Right']",2023-11-18 15:36:09,0.2639749050140381,MediaPipe Hand Landmarker,0.0.1
+Image File Name,Image Size,Prediction,Prediction Score,Date and Time,Execution Time,Model,Model Revision
+image_63a2f6b54a4927017ad69b60_190052.jpeg,12152,"['Right', 'Left']","[0.986241340637207, 0.9178226590156555]",2023-11-18 18:18:52,0.0914607048034668,MediaPipe Hand Landmarker,0.0.1
+image_63a2f6b54a4927017ad69b60_190052.jpeg,12152,"['Right', 'Left']","[0.986241340637207, 0.9178226590156555]",2023-11-18 18:59:51,0.06911802291870117,MediaPipe Hand Landmarker,0.0.1
+140423147-adult-handsome-man-scared-with-hands-up-over-isolated-white-background.jpg,98607,"['Left', 'Right']","[0.9646601676940918, 0.9346327781677246]",2023-11-18 19:03:30,0.08570647239685059,MediaPipe Hand Landmarker,0.0.1

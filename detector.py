@@ -30,9 +30,9 @@ class HandsDetector:
 
         label_list = detection_result.handedness
         label_names = [category[0].display_name for category in label_list]
+
+        scores = [category[0].score for category in label_list]
         
-
-
         x_coordinates = [[landmark[0] for landmark in hand] for hand in hand_landmarks_list_normalized]
         y_coordinates = [[landmark[1] for landmark in hand] for hand in hand_landmarks_list_normalized]
 
@@ -41,12 +41,6 @@ class HandsDetector:
 
         bbox = [[x, y] for x, y in zip(x_bbox, y_bbox)]
     
-        detection = Detection(landmarks=hand_landmarks_list_normalized, labels=label_names, bbox=bbox)
+        detection = Detection(landmarks=hand_landmarks_list_normalized, labels=label_names, bbox=bbox, scores=scores)
         return detection
            
-
-if __name__ == "__main__":
-    image_file = "person.jpg"
-    img = cv2.cvtColor(cv2.imread(image_file), cv2.COLOR_BGR2RGB)
-    detector = HandsDetector()
-    detector.detect_image(img)
