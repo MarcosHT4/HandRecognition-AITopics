@@ -1,0 +1,4 @@
+Image File Name,Image Size,Prediction,Date and Time,Execution Time,Model,Model Revision
+140423147-adult-handsome-man-scared-with-hands-up-over-isolated-white-background.jpg,98607,"['Left', 'Right']",2023-11-18 15:33:54,0.26237940788269043,MediaPipe Hand Landmarker,0.0.1
+287041105.jpg,172589,"['Right', 'Left']",2023-11-18 15:36:04,0.2901453971862793,MediaPipe Hand Landmarker,0.0.1
+140423147-adult-handsome-man-scared-with-hands-up-over-isolated-white-background.jpg,98607,"['Left', 'Right']",2023-11-18 15:36:09,0.2639749050140381,MediaPipe Hand Landmarker,0.0.1
