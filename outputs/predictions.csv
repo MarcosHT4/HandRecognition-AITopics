@@ -1,5 +1,4 @@
-Image File Name,Image Size,Prediction,Prediction Score,Date and Time,Execution Time,Model,Model Revision
-image_63a2f6b54a4927017ad69b60_190052.jpeg,12152,"['Right', 'Left']","[0.986241340637207, 0.9178226590156555]",2023-11-19 22:22:42,0.05439424514770508,MediaPipe Hand Landmarker,0.0.1
-hands-to-camera.jpg,84134,"['Left', 'Right']","[0.948805570602417, 0.9770964980125427]",2023-11-19 22:22:55,0.08246040344238281,MediaPipe Hand Landmarker,0.0.1
-Amplify.jpeg,15727,[],[],2023-11-19 22:26:16,0.033264875411987305,MediaPipe Hand Landmarker,0.0.1
-biden.jpg,353723,[],[],2023-11-19 22:28:15,0.07764482498168945,MediaPipe Hand Landmarker,0.0.1
+Image File Name,Image Size,Prediction,Prediction Score,Number Of Landmarks,Date and Time,Execution Time,Model,Model Revision
+hands3.jpg,51743,"['Right', 'Left']","[0.9409945607185364, 0.9831409454345703]","[21, 21]",2023-11-20 13:54:18,0.23737025260925293,MediaPipe Hand Landmarker,0.0.1
+image_63a2f6b54a4927017ad69b60_190052.jpeg,12152,"['Right', 'Left']","[0.986241340637207, 0.9178226590156555]","[21, 21]",2023-11-20 13:54:51,0.16784095764160156,MediaPipe Hand Landmarker,0.0.1
+287041105.jpg,172589,"['Right', 'Left']","[0.9595831632614136, 0.9826628565788269]","[21, 21]",2023-11-20 13:55:03,0.2948482036590576,MediaPipe Hand Landmarker,0.0.1

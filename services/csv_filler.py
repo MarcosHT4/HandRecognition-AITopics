@@ -17,6 +17,7 @@ class CSVFillerService:
         img_size = img_file.size
         prediction = modelOutput.detection.labels
         score = modelOutput.detection.scores
+        numberOfLandmarks = [len(modelOutput.detection.landmarks[i]) for i in range(len(modelOutput.detection.landmarks))]
 
         csv_file_path = SETTINGS.csv_path
         if not os.path.exists(csv_file_path.split("/")[0]):
@@ -25,7 +26,7 @@ class CSVFillerService:
         with open(csv_file_path, "a", newline='') as f:
             writer = csv.writer(f)
             if is_new_file:
-                header = ["Image File Name", "Image Size", "Prediction", "Prediction Score","Date and Time", "Execution Time", "Model", "Model Revision"]
+                header = ["Image File Name", "Image Size", "Prediction", "Prediction Score","Number Of Landmarks","Date and Time", "Execution Time", "Model", "Model Revision"]
                 writer.writerow(header)
-            row=[img_name,img_size,prediction,score,date_and_time,executionTime,modelName,modelRevision]
+            row=[img_name,img_size,prediction,score,numberOfLandmarks,date_and_time,executionTime,modelName,modelRevision]
             writer.writerow(row)
