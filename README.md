@@ -36,6 +36,8 @@ mediapipe
 lightning
 Pillow
 pydantic
+pydantic_settings
+python-multipart
 ```
 
 Una vez instaladas, entrar al archivo `main.py`, y ejecutarlo. Esto iniciará el servidor de la API, el cual estará disponible en la dirección `http://localhost:8000`.
