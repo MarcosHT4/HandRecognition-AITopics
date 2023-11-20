@@ -11,19 +11,20 @@ from detector import HandsDetector
 import time
 from services.upload_file import UploadFileService
 from services.csv_filler import CSVFillerService
-
+from functools import cache
 router = APIRouter()
 hands_detector = HandsDetector()
 upload_file_service = UploadFileService()
 csv_filler_service = CSVFillerService()
 SETTINGS = get_settings()
 
+@cache
 def get_detector():
     return hands_detector
-
+@cache
 def get_upload_file():
     return upload_file_service
-
+@cache
 def get_csv_filler():
     return csv_filler_service
 
