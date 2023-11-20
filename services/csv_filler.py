@@ -17,8 +17,10 @@ class CSVFillerService:
         img_size = img_file.size
         prediction = modelOutput.detection.labels
         score = modelOutput.detection.scores
-    
+
         csv_file_path = SETTINGS.csv_path
+        if not os.path.exists(csv_file_path.split("/")[0]):
+            os.makedirs(csv_file_path.split("/")[0])
         is_new_file = not os.path.exists(csv_file_path)
         with open(csv_file_path, "a", newline='') as f:
             writer = csv.writer(f)

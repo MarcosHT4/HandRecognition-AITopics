@@ -18,6 +18,6 @@ class UploadFileService:
         try:
             img_obj = Image.open(img_stream)
         except UnidentifiedImageError as e:
-            raise HTTPException(status_code=415, detail=f"not supported: {e}")
+            raise HTTPException(status_code=415, detail=f"File type not supported: {e}")
         img_array = np.array(img_obj)
         return detector.detect_image(img_array), img_array
